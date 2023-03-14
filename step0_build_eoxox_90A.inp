@@ -277,10 +277,10 @@ PRINT COOR SELE .not. INIT END
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ioformat exten
-write coord pdb name "coords/Eoxox/3hb3_eoxox.pdb"
-write coord card name "coords/Eoxox/3hb3_eoxox.crd"
-write psf card name "coords/Eoxox/3hb3_eoxox.psf"
-write psf xplor card name "coords/Eoxox/3hb3_eoxox.xplor.psf"
+write coord pdb name "coords/3hb3_eoxox_90A.pdb"
+write coord card name "coords/3hb3_eoxox_90A.crd"
+write psf card name "coords/3hb3_eoxox_90A.psf"
+write psf xplor card name "coords/3hb3_eoxox_90A.xplor.psf"
 
 
 stop

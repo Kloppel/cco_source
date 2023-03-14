@@ -1,2 +1,3 @@
-ATOM  12342  OH2 OHMIF   1       4.294  -4.554   6.718  1.00 17.50      FEOH  
-ATOM  12343  H1  OHMIF   1       4.239  -4.369   7.656  1.00  0.00      FEOH  
+ATOM      1  OH2 OHMIF   1       4.294  -4.554   6.718  1.00 17.50      FEOH
+ATOM      2  H1  OHMIF   1       4.239  -4.369   7.656  1.00  0.00      FEOH
+TER
