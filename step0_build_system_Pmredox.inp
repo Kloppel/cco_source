@@ -148,22 +148,32 @@ COOR PRINT SELE SEGID GHEM .and. .not. INIT END
 !!!!!!!!!!!!!!!!!!!!!!!!!!!PATCHES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!EHEM = Heme a3
-!GHEM = Heme a
 patch DISU ACHA 66 ACHA 80
+
+!GHEM = Heme a
 patch AHE2 GHEM 2 ACHA 94 ACHA 413 SETUP
 patch CA21 META 2 META 3 BCHA 181 BCHA 216 BCHA 218 BCHA 220 BCHA 224 BCHA 227 SETUP
+
+!EHEM = Heme a3
 patch A3H4 EHEM 2 ACHA 411 FEOH 1 SETUP
 patch CBP2 META 1 ACHA 325 ACHA 326 OHMI 1 ACHA 280 ACHA 276 SETUP
+
 AUTOGENERATE ANGLES DIHEDRALS
 ! Do not use Autogenerate Angles Dihedrals after these patches
-PATCH CUBP META 3 ACHA 276 ACHA 325 ACHA 326 OHMI 1 SETUP !according to Jovans example
+
+! Deletes
 patch DEL2 OHMI 1 SETUP
-patch CUAP META 1 META 2 BCHA 181 BCHA 216 BCHA 218 BCHA 220 BCHA 224 BCHA 227 SETUP
+
+! Coordinate Hemes
 patch PHEM ACHA 411 EHEM 2 SETUP
 patch PHEM ACHA 94 GHEM 2 SETUP
 patch PHE2 ACHA 413 GHEM 2 SETUP
 patch EISO FEOH 1 EHEM 2 SETUP
+
+! Coordinate Copper Centers
+patch CUAP META 1 META 2 BCHA 181 BCHA 216 BCHA 218 BCHA 220 BCHA 224 BCHA 227 SETUP
+PATCH CUBP META 3 ACHA 276 ACHA 325 ACHA 326 OHMI 1 SETUP !according to Jovans example
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
