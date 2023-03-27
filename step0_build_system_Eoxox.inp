@@ -161,11 +161,6 @@ patch CB1T META 1 ACHA 325 ACHA 326 OHMI 1 ACHA 280 ACHA 276 SETUP
 AUTOGENERATE ANGLES DIHEDRALS
 ! Do not use Autogenerate Angles Dihedrals after these patches
 
-! Deletes
-patch DEL1 OHMI 1 SETUP
-patch DEL2 OHMI 1 SETUP
-patch DEL3 OHMI 1 SETUP
-
 ! Coordinate Hemes
 patch PHEM ACHA 411 EHEM 2 SETUP
 patch PHEM ACHA 94 GHEM 2 SETUP
@@ -176,17 +171,21 @@ patch EISE FEOH 1 EHEM 2 SETUP
 patch CUAP META 1 META 2 BCHA 181 BCHA 216 BCHA 218 BCHA 220 BCHA 224 BCHA 227 SETUP
 patch CUBP META 3 ACHA 276 ACHA 325 ACHA 326 OHMI 1 SETUP !according to Jovans example
 
+! Deletes
+patch DEL1 OHMI 1 SETUP
+patch DEL2 OHMI 1 SETUP
+patch DEL3 OHMI 1 SETUP
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!MEMB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-OPEN READ UNIT 42 CARD NAME "coords/OHMI_HOH/3HB3_MEMB.pdb"
+OPEN READ UNIT 42 CARD NAME "coords/3HB3_MEMB.pdb"
 READ SEQUENCE PDB UNIT 42
 GENERATE MEMB SETUP WARN FIRST NONE LAST NONE
 CLOSE UNIT 42
 
-OPEN READ UNIT 43 CARD NAME "coords/OHMI_HOH/3HB3_MEMB.pdb"
+OPEN READ UNIT 43 CARD NAME "coords/3HB3_MEMB.pdb"
 READ COOR PDB UNIT 43 RESID
 CLOSE UNIT 43
 
@@ -199,62 +198,42 @@ IC BUILD
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! WAT0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-OPEN READ UNIT 42 CARD NAME "coords/OHMI_HOH/3HB3_WAT0.pdb"
+OPEN READ UNIT 42 CARD NAME "coords/3HB3_WAT0.pdb"
 READ SEQUENCE PDB UNIT 42
 GENERATE WAT0 SETUP WARN FIRST NONE LAST NONE
 CLOSE UNIT 42
 
-OPEN READ UNIT 43 CARD NAME "coords/OHMI_HOH/3HB3_WAT0.pdb"
+OPEN READ UNIT 43 CARD NAME "coords/3HB3_WAT0.pdb"
 READ COOR PDB UNIT 43 RESID
 CLOSE UNIT 43
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! WAT1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-OPEN READ UNIT 42 CARD NAME "coords/OHMI_HOH/3HB3_WAT1.pdb"
+OPEN READ UNIT 42 CARD NAME "coords/3HB3_WAT1.pdb"
 READ SEQUENCE PDB UNIT 42
 GENERATE WAT1 SETUP WARN FIRST NONE LAST NONE
 CLOSE UNIT 42
 
-OPEN READ UNIT 43 CARD NAME "coords/OHMI_HOH/3HB3_WAT1.pdb"
+OPEN READ UNIT 43 CARD NAME "coords/3HB3_WAT1.pdb"
 READ COOR PDB UNIT 43 RESID
 CLOSE UNIT 43
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! WAT2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-OPEN READ UNIT 42 CARD NAME "coords/OHMI_HOH/3HB3_WAT2.pdb"
+OPEN READ UNIT 42 CARD NAME "coords/3HB3_WAT2.pdb"
 READ SEQUENCE PDB UNIT 42
 GENERATE WAT2 SETUP WARN FIRST NONE LAST NONE
 CLOSE UNIT 42
 
-OPEN READ UNIT 43 CARD NAME "coords/OHMI_HOH/3HB3_WAT2.pdb"
-READ COOR PDB UNIT 43 RESID
-CLOSE UNIT 43
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! WAT3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-OPEN READ UNIT 42 CARD NAME "coords/OHMI_HOH/3HB3_WAT3.pdb"
-READ SEQUENCE PDB UNIT 42
-GENERATE WAT3 SETUP WARN FIRST NONE LAST NONE
-CLOSE UNIT 42
-
-OPEN READ UNIT 43 CARD NAME "coords/OHMI_HOH/3HB3_WAT3.pdb"
-READ COOR PDB UNIT 43 RESID
-CLOSE UNIT 43
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! WAT4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-OPEN READ UNIT 42 CARD NAME "coords/OHMI_HOH/3HB3_WAT4.pdb"
-READ SEQUENCE PDB UNIT 42
-GENERATE WAT4 SETUP WARN FIRST NONE LAST NONE
-CLOSE UNIT 42
-
-OPEN READ UNIT 43 CARD NAME "coords/OHMI_HOH/3HB3_WAT4.pdb"
+OPEN READ UNIT 43 CARD NAME "coords/3HB3_WAT2.pdb"
 READ COOR PDB UNIT 43 RESID
 CLOSE UNIT 43
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-OPEN READ UNIT 42 CARD NAME "coords/OHMI_HOH/3HB3_IONS.pdb"
+OPEN READ UNIT 42 CARD NAME "coords/3HB3_IONS.pdb"
 READ SEQUENCE PDB UNIT 42
 GENERATE IONS SETUP WARN FIRST NONE LAST NONE
 CLOSE UNIT 42
 
-OPEN READ UNIT 43 CARD NAME "coords/OHMI_HOH/3HB3_IONS.pdb"
+OPEN READ UNIT 43 CARD NAME "coords/3HB3_IONS.pdb"
 READ COOR PDB UNIT 43 RESID
 CLOSE UNIT 43
 
